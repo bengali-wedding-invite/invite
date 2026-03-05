@@ -1,0 +1,208 @@
+/* ═══════════════════════════════════════════════
+   Hero Section
+   ═══════════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-accent);
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(139, 0, 0, 0.5) 0%,
+    var(--color-overlay) 50%,
+    rgba(59, 31, 14, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-md);
+  max-width: 800px;
+}
+
+.hero__alpona {
+  border: 2px solid var(--color-secondary);
+  padding: var(--space-lg) var(--space-md);
+  position: relative;
+}
+
+.hero__alpona::before,
+.hero__alpona::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-color: var(--color-secondary);
+  border-style: solid;
+}
+
+.hero__alpona::before {
+  top: -4px;
+  left: -4px;
+  border-width: 3px 0 0 3px;
+}
+
+.hero__alpona::after {
+  bottom: -4px;
+  right: -4px;
+  border-width: 0 3px 3px 0;
+}
+
+.hero__names {
+  font-family: var(--font-english);
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--space-sm);
+  animation: hero-fade-in 1.2s ease 0.3s both;
+}
+
+.hero__name {
+  display: block;
+}
+
+.hero__name--bengali {
+  font-family: var(--font-bengali);
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-top: var(--space-xs);
+}
+
+.hero__ampersand {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  margin: var(--space-xs) 0;
+  font-style: italic;
+}
+
+.hero__tagline {
+  font-family: var(--font-body);
+  color: var(--color-secondary-light);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+  animation: hero-fade-in 1.2s ease 0.6s both;
+}
+
+.hero__tagline-bn {
+  display: block;
+  font-family: var(--font-bengali);
+  font-style: normal;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-top: var(--space-xs);
+}
+
+.hero__date {
+  font-family: var(--font-english);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: hero-fade-in 1.2s ease 0.9s both;
+}
+
+.hero__date-bn {
+  display: block;
+  font-family: var(--font-bengali);
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.85;
+  margin-top: var(--space-xs);
+}
+
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: scroll-bounce 2s ease infinite;
+  cursor: pointer;
+}
+
+.hero__scroll-indicator svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-secondary);
+  opacity: 0.7;
+}
+
+/* Hero Animations */
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero__names {
+    font-size: 3.5rem;
+  }
+
+  .hero__name--bengali {
+    font-size: 2.2rem;
+  }
+
+  .hero__ampersand {
+    font-size: 2rem;
+  }
+
+  .hero__tagline {
+    font-size: 1.3rem;
+  }
+
+  .hero__date {
+    font-size: 1.4rem;
+  }
+
+  .hero__alpona {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .hero__alpona::before,
+  .hero__alpona::after {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__names {
+    font-size: 4.5rem;
+  }
+
+  .hero__name--bengali {
+    font-size: 2.8rem;
+  }
+}

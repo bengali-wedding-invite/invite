@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <rect width="400" height="500" fill="#F5E6D3"/>
+  <circle cx="200" cy="180" r="70" fill="#DAA520" opacity="0.3"/>
+  <circle cx="200" cy="160" r="28" fill="#E8C9A0"/>
+  <path d="M180 140 Q200 125 220 140 L225 150 Q200 145 175 150Z" fill="#3B1F0E" opacity="0.3"/>
+  <path d="M175 200 Q200 215 225 200 L235 280 Q200 295 165 280Z" fill="#3B1F0E" opacity="0.25"/>
+  <rect x="190" y="195" width="20" height="8" rx="2" fill="#DAA520" opacity="0.4"/>
+  <text x="200" y="360" text-anchor="middle" font-family="serif" font-size="18" fill="#B22222" opacity="0.6">Groom Photo</text>
+  <text x="200" y="385" text-anchor="middle" font-family="serif" font-size="14" fill="#6B4226" opacity="0.5">Replace with actual image</text>
+</svg>

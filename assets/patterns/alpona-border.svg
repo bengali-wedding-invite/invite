@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="currentColor">
+  <path d="M0 20 Q25 0 50 20 Q75 40 100 20 Q125 0 150 20 Q175 40 200 20" stroke="#DAA520" stroke-width="1.5" fill="none"/>
+  <circle cx="0" cy="20" r="3" fill="#DAA520"/>
+  <circle cx="50" cy="20" r="3" fill="#DAA520"/>
+  <circle cx="100" cy="20" r="3" fill="#DAA520"/>
+  <circle cx="150" cy="20" r="3" fill="#DAA520"/>
+  <circle cx="200" cy="20" r="3" fill="#DAA520"/>
+  <path d="M25 10 Q25 5 30 10 Q25 15 25 10Z" fill="#DAA520" opacity="0.4"/>
+  <path d="M75 30 Q75 25 80 30 Q75 35 75 30Z" fill="#DAA520" opacity="0.4"/>
+  <path d="M125 10 Q125 5 130 10 Q125 15 125 10Z" fill="#DAA520" opacity="0.4"/>
+  <path d="M175 30 Q175 25 180 30 Q175 35 175 30Z" fill="#DAA520" opacity="0.4"/>
+</svg>

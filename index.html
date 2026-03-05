@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <meta name="description" content="You are cordially invited to celebrate our wedding. Join us on our special day.">
+  <meta name="theme-color" content="#B22222">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wedding Invitation">
+  <meta property="og:description" content="You are cordially invited to celebrate our wedding.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/heart.svg" type="image/svg+xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       Navigation
+       ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo" id="nav-logo"></div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+    <ul class="nav__list" id="nav-list"></ul>
+    <div class="nav__overlay" id="nav-overlay"></div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       Music Toggle Button
+       ═══════════════════════════════════════════ -->
+  <button class="music-btn" id="music-btn" aria-label="Play music">
+    <span class="music-btn__icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+        <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6ZM10 19a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z" opacity="0.4"/>
+        <line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       Hero Section
+       ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__alpona">
+        <div class="hero__fish">
+          <svg viewBox="0 0 80 40" fill="#DAA520" width="60" opacity="0.5" style="margin: 0 auto var(--space-sm);">
+            <path d="M10 20 Q20 8 35 20 Q20 32 10 20Z" opacity="0.7"/>
+            <circle cx="28" cy="17" r="1.5" fill="#FFF8F0"/>
+            <path d="M10 20 L4 14 L6 20 L4 26Z" opacity="0.5"/>
+            <path d="M70 20 Q60 8 45 20 Q60 32 70 20Z" opacity="0.7"/>
+            <circle cx="52" cy="17" r="1.5" fill="#FFF8F0"/>
+            <path d="M70 20 L76 14 L74 20 L76 26Z" opacity="0.5"/>
+          </svg>
+        </div>
+        <h1 class="hero__names" id="hero-names"></h1>
+        <p class="hero__tagline" id="hero-tagline"></p>
+        <p class="hero__date" id="hero-date"></p>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="#DAA520" width="30" height="30">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Countdown
+       ═══════════════════════════════════════════ -->
+  <section class="countdown" id="countdown">
+    <div class="section">
+      <h2 class="countdown__title reveal" id="countdown-title"></h2>
+      <div class="countdown__timer reveal" id="countdown-timer">
+        <div class="countdown__unit">
+          <span class="countdown__digit" data-unit="days">00</span>
+          <span class="countdown__label">Days<span class="countdown__label-bn">দিন</span></span>
+        </div>
+        <span class="countdown__separator">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__digit" data-unit="hours">00</span>
+          <span class="countdown__label">Hours<span class="countdown__label-bn">ঘন্টা</span></span>
+        </div>
+        <span class="countdown__separator">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__digit" data-unit="minutes">00</span>
+          <span class="countdown__label">Minutes<span class="countdown__label-bn">মিনিট</span></span>
+        </div>
+        <span class="countdown__separator">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__digit" data-unit="seconds">00</span>
+          <span class="countdown__label">Seconds<span class="countdown__label-bn">সেকেন্ড</span></span>
+        </div>
+      </div>
+      <div class="countdown__message" id="countdown-message" style="display: none;"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Couple
+       ═══════════════════════════════════════════ -->
+  <section class="couple" id="couple">
+    <div class="section">
+      <div class="section__header reveal">
+        <h2 class="section__title">
+          The Couple
+          <span class="section__title-bn">বর ও কনে</span>
+        </h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="couple__grid" id="couple-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Love Story Timeline
+       ═══════════════════════════════════════════ -->
+  <section class="timeline" id="story">
+    <div class="section">
+      <div class="section__header reveal">
+        <h2 class="section__title">
+          Our Story
+          <span class="section__title-bn">আমাদের গল্প</span>
+        </h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="timeline__container" id="timeline-container"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Events
+       ═══════════════════════════════════════════ -->
+  <section class="events" id="events">
+    <div class="section">
+      <div class="section__header reveal">
+        <h2 class="section__title">
+          Celebrations
+          <span class="section__title-bn">অনুষ্ঠান</span>
+        </h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="events__grid" id="events-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Gallery
+       ═══════════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="section">
+      <div class="section__header reveal">
+        <h2 class="section__title">
+          Gallery
+          <span class="section__title-bn">গ্যালারি</span>
+        </h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="gallery__grid reveal--stagger" id="gallery-grid"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="gallery__lightbox" id="lightbox">
+      <button class="gallery__lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <button class="gallery__lightbox-nav gallery__lightbox-nav--prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+      <img class="gallery__lightbox-image" id="lightbox-image" src="" alt="">
+      <button class="gallery__lightbox-nav gallery__lightbox-nav--next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RSVP
+       ═══════════════════════════════════════════ -->
+  <section class="rsvp" id="rsvp">
+    <div class="section">
+      <div class="section__header reveal">
+        <h2 class="section__title">
+          RSVP
+          <span class="section__title-bn">আমন্ত্রণ</span>
+        </h2>
+        <div class="section__divider"></div>
+      </div>
+      <p class="rsvp__message reveal" id="rsvp-message"></p>
+      <div class="rsvp__form-wrapper reveal">
+        <iframe class="rsvp__iframe" id="rsvp-iframe" title="RSVP Form" frameborder="0" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       Footer
+       ═══════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__alpona"></div>
+    <p class="footer__message" id="footer-message"></p>
+    <p class="footer__hashtag" id="footer-hashtag"></p>
+    <div class="footer__social" id="footer-social"></div>
+    <p class="footer__copyright">&copy; 2026 &mdash; Made with love</p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       Scripts
+       ═══════════════════════════════════════════ -->
+  <script src="config.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

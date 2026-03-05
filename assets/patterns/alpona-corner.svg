@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#DAA520" stroke-width="1.2">
+  <path d="M5 5 Q5 40 40 40 Q40 5 5 5Z" opacity="0.6"/>
+  <path d="M10 10 Q10 35 35 35 Q35 10 10 10Z" opacity="0.4"/>
+  <path d="M5 5 C20 5 5 20 5 5" opacity="0.5"/>
+  <circle cx="15" cy="15" r="4" fill="#DAA520" opacity="0.3"/>
+  <path d="M25 8 Q28 3 31 8 Q28 13 25 8Z" fill="#DAA520" opacity="0.25"/>
+  <path d="M8 25 Q3 28 8 31 Q13 28 8 25Z" fill="#DAA520" opacity="0.25"/>
+  <path d="M5 2 L5 5 L2 5" stroke-width="2" opacity="0.7"/>
+</svg>

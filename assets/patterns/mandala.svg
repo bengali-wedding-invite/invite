@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#DAA520" stroke-width="0.8">
+  <circle cx="100" cy="100" r="90" opacity="0.2"/>
+  <circle cx="100" cy="100" r="70" opacity="0.25"/>
+  <circle cx="100" cy="100" r="50" opacity="0.3"/>
+  <circle cx="100" cy="100" r="30" opacity="0.35"/>
+  <circle cx="100" cy="100" r="12" fill="#DAA520" opacity="0.15"/>
+  <!-- Petals at 90px radius -->
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(45 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(90 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(135 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(180 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(225 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(270 100 100)"/>
+  <ellipse cx="100" cy="15" rx="8" ry="18" fill="#DAA520" opacity="0.08" transform="rotate(315 100 100)"/>
+  <!-- Inner decorative lines -->
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(45 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(90 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(135 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(180 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(225 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(270 100 100)"/>
+  <line x1="100" y1="30" x2="100" y2="10" opacity="0.15" transform="rotate(315 100 100)"/>
+</svg>

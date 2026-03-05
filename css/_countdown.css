@@ -1,0 +1,135 @@
+/* ═══════════════════════════════════════════════
+   Countdown Section
+   ═══════════════════════════════════════════════ */
+
+.countdown {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: url('../assets/patterns/mandala.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.countdown__title {
+  font-family: var(--font-english);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.countdown__title-bn {
+  display: block;
+  font-family: var(--font-bengali);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-top: var(--space-xs);
+}
+
+.countdown__timer {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.countdown__digit {
+  font-family: var(--font-english);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.countdown__label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: var(--space-xs);
+}
+
+.countdown__label-bn {
+  font-family: var(--font-bengali);
+  font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: 0;
+  display: block;
+  opacity: 0.8;
+}
+
+.countdown__separator {
+  font-family: var(--font-english);
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+  align-self: flex-start;
+  margin-top: 0.3rem;
+}
+
+.countdown__message {
+  font-family: var(--font-english);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--space-md);
+}
+
+.countdown__message-bn {
+  display: block;
+  font-family: var(--font-bengali);
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  margin-top: var(--space-xs);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .countdown__title {
+    font-size: 2.2rem;
+  }
+
+  .countdown__digit {
+    font-size: 4.5rem;
+  }
+
+  .countdown__unit {
+    min-width: 100px;
+  }
+
+  .countdown__timer {
+    gap: var(--space-md);
+  }
+
+  .countdown::before {
+    width: 600px;
+    height: 600px;
+  }
+}

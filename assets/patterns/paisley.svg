@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <path d="M30 5 Q50 15 45 35 Q40 50 25 50 Q10 50 10 35 Q10 20 30 5Z" stroke="#DAA520" stroke-width="1" opacity="0.3"/>
+  <path d="M30 12 Q42 20 38 33 Q35 42 27 42 Q18 42 18 33 Q18 22 30 12Z" stroke="#DAA520" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="28" cy="28" r="3" fill="#DAA520" opacity="0.15"/>
+  <path d="M30 5 Q32 2 34 5" stroke="#DAA520" stroke-width="0.8" opacity="0.25"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <rect width="400" height="500" fill="#F5E6D3"/>
+  <circle cx="200" cy="180" r="70" fill="#DAA520" opacity="0.3"/>
+  <circle cx="200" cy="180" r="55" fill="#DAA520" opacity="0.2"/>
+  <path d="M200 130 Q220 120 230 140 Q240 160 220 170 Q210 175 200 170 Q190 175 180 170 Q160 160 170 140 Q180 120 200 130Z" fill="#DAA520" opacity="0.4"/>
+  <circle cx="200" cy="160" r="25" fill="#E8C9A0"/>
+  <path d="M175 200 Q200 220 225 200 L240 280 Q200 300 160 280Z" fill="#B22222" opacity="0.3"/>
+  <text x="200" y="360" text-anchor="middle" font-family="serif" font-size="18" fill="#B22222" opacity="0.6">Bride Photo</text>
+  <text x="200" y="385" text-anchor="middle" font-family="serif" font-size="14" fill="#6B4226" opacity="0.5">Replace with actual image</text>
+</svg>

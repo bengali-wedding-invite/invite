@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" fill="#DAA520">
+  <!-- Left fish -->
+  <path d="M10 20 Q20 8 35 20 Q20 32 10 20Z" opacity="0.7"/>
+  <circle cx="28" cy="17" r="1.5" fill="#FFF8F0"/>
+  <path d="M10 20 L4 14 L6 20 L4 26Z" opacity="0.5"/>
+  <!-- Right fish (mirrored) -->
+  <path d="M70 20 Q60 8 45 20 Q60 32 70 20Z" opacity="0.7"/>
+  <circle cx="52" cy="17" r="1.5" fill="#FFF8F0"/>
+  <path d="M70 20 L76 14 L74 20 L76 26Z" opacity="0.5"/>
+</svg>

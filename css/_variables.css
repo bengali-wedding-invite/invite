@@ -1,0 +1,48 @@
+:root {
+  /* Colors */
+  --color-primary: #B22222;
+  --color-primary-light: #D4453A;
+  --color-secondary: #DAA520;
+  --color-secondary-light: #F0D060;
+  --color-accent: #8B0000;
+  --color-bg: #FFF8F0;
+  --color-text: #3B1F0E;
+  --color-text-light: #6B4226;
+  --color-white: #FFFFFF;
+  --color-overlay: rgba(59, 31, 14, 0.65);
+  --color-border: rgba(218, 165, 32, 0.3);
+
+  /* Typography */
+  --font-english: 'Cormorant Garamond', serif;
+  --font-bengali: 'Noto Serif Bengali', serif;
+  --font-body: 'Lora', serif;
+
+  /* Spacing (8px base) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-xxl: 8rem;
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-round: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  /* Z-index */
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-lightbox: 300;
+  --z-music: 50;
+}
